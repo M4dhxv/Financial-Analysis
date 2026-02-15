@@ -1,0 +1,303 @@
+#!/usr/bin/env python3
+"""
+PDF REPORT BUILDER
+Generates professional PDF reports with embedded charts.
+
+Works with ANY dataset - completely schema-agnostic.
+"""
+
+from reportlab.lib.pagesizes import letter, A4
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib.units import inch
+from reportlab.lib import colors
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image, PageBreak
+from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_RIGHT
+from pathlib import Path
+import json
+from datetime import datetime
+import pandas as pd
+
+print("="*80)
+print("PDF REPORT BUILDER")
+print("="*80)
+
+
+def load_report_data(analysis_dir: Path):
+    """Load all necessary data for the report."""
+    
+    data = {}
+    
+    # Load variance summary
+    summary_file = analysis_dir / "variance_summary.json"
+    if summary_file.exists():
+        with open(summary_file, 'r') as f:
+            data['summary'] = json.load(f)
+    
+    # Load schema
+    schema_file = analysis_dir / "detected_schema.json"
+    if schema_file.exists():
+        with open(schema_file, 'r') as f:
+            data['schema'] = json.load(f)
+    
+    # Load variance data
+    variance_file = analysis_dir / "variance_analysis.csv"
+    if variance_file.exists():
+        data['variance'] = pd.read_csv(variance_file)
+    
+    # Load chart registry
+    chart_reg_file = analysis_dir / "charts" / "chart_registry.json"
+    if chart_reg_file.exists():
+        with open(chart_reg_file, 'r') as f:
+            data['charts'] = json.load(f)
+    
+    # Load metric registry
+    registry_file = analysis_dir / "metric_registry.json"
+    if registry_file.exists():
+        with open(registry_file, 'r') as f:
+            data['registry'] = json.load(f)
+    
+    return data
+
+
+def build_pdf_report(analysis_dir: str, output_file: str = None):
+    """Generate PDF report with charts."""
+    
+    analysis_path = Path(analysis_dir)
+    
+    if output_file is None:
+        output_file = analysis_path / "financial_report.pdf"
+    else:
+        output_file = Path(output_file)
+    
+    print(f"\n📊 Loading data from: {analysis_path}")
+    
+    # Load data
+    data = load_report_data(analysis_path)
+    
+    print(f"  ✓ Loaded {len(data)} data sources")
+    
+    # Create PDF
+    print(f"\n📄 Building PDF report...")
+    
+    doc = SimpleDocTemplate(
+        str(output_file),
+        pagesize=letter,
+        rightMargin=0.75*inch,
+        leftMargin=0.75*inch,
+        topMargin=0.75*inch,
+        bottomMargin=0.75*inch
+    )
+    
+    # Story elements
+    story = []
+    
+    # Styles
+    styles = getSampleStyleSheet()
+    title_style = ParagraphStyle(
+        'CustomTitle',
+        parent=styles['Heading1'],
+        fontSize=24,
+        textColor=colors.HexColor('#1a1a1a'),
+        spaceAfter=30,
+        alignment=TA_CENTER,
+        fontName='Helvetica-Bold'
+    )
+    
+    heading_style = ParagraphStyle(
+        'CustomHeading',
+        parent=styles['Heading2'],
+        fontSize=16,
+        textColor=colors.HexColor('#2E86AB'),
+        spaceAfter=12,
+        spaceBefore=12,
+        fontName='Helvetica-Bold'
+    )
+    
+    subheading_style = ParagraphStyle(
+        'CustomSubheading',
+        parent=styles['Heading3'],
+        fontSize=12,
+        textColor=colors.HexColor('#333333'),
+        spaceAfter=6,
+        fontName='Helvetica-Bold'
+    )
+    
+    normal_style = styles['Normal']
+    
+    # ========================================================================
+    # COVER PAGE
+    # ========================================================================
+    
+    story.append(Spacer(1, 2*inch))
+    story.append(Paragraph("Financial Analysis Report", title_style))
+    story.append(Spacer(1, 0.3*inch))
+    
+    summary = data.get('summary', {})
+    story.append(Paragraph(f"<b>Analysis Period:</b> {summary.get('latest_period', 'N/A')}", normal_style))
+    story.append(Paragraph(f"<b>Generated:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", normal_style))
+    story.append(Spacer(1, 0.5*inch))
+    
+    # Key stats table
+    stats_data = [
+        ['Total Variance Records', f"{summary.get('total_variance_records', 0):,}"],
+        ['Entities Analyzed', f"{summary.get('entities_analyzed', 0):,}"],
+        ['Metrics Analyzed', f"{summary.get('metrics_analyzed', 0)}"]
+    ]
+    
+    stats_table = Table(stats_data, colWidths=[3*inch, 2*inch])
+    stats_table.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor('#f5f5f5')),
+        ('TEXTCOLOR', (0, 0), (-1, -1), colors.black),
+        ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+        ('FONTNAME', (0, 0), (0, -1), 'Helvetica-Bold'),
+        ('FONTSIZE', (0, 0), (-1, -1), 11),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 12),
+        ('TOPPADDING', (0, 0), (-1, -1), 12),
+        ('GRID', (0, 0), (-1, -1), 1, colors.white)
+    ]))
+    
+    story.append(stats_table)
+    story.append(Spacer(1, 0.5*inch))
+    
+    story.append(Paragraph("<i>Generated by Schema-Agnostic Financial Reporting Engine v2.0</i>", normal_style))
+    story.append(PageBreak())
+    
+    # ========================================================================
+    # EXECUTIVE SUMMARY
+    # ========================================================================
+    
+    story.append(Paragraph("Executive Summary", heading_style))
+    story.append(Spacer(1, 0.2*inch))
+    
+    # Top movers
+    top_movers = summary.get('top_movers', [])[:5]
+    
+    if top_movers:
+        story.append(Paragraph("Top 5 Changes", subheading_style))
+        
+        for mover in top_movers:
+            entity_short = str(mover.get('entity', ''))[:60]
+            metric = mover.get('metric_name', '')
+            delta_abs = mover.get('delta_absolute', 0)
+            delta_pct = mover.get('delta_percentage', 0)
+            
+            text = f"• <b>{metric}</b> in {entity_short}: {delta_abs:+,.2f} ({delta_pct:+.1f}%)"
+            story.append(Paragraph(text, normal_style))
+            story.append(Spacer(1, 0.05*inch))
+    
+    story.append(Spacer(1, 0.3*inch))
+    
+    # ========================================================================
+    # CHARTS SECTION
+    # ========================================================================
+    
+    charts_data = data.get('charts', {})
+    charts_list = charts_data.get('charts', [])
+    
+    if charts_list:
+        story.append(Paragraph("Visual Analysis", heading_style))
+        story.append(Spacer(1, 0.2*inch))
+        
+        for chart in charts_list[:10]:  # Maximum 10 charts
+            chart_path = Path(chart['file_path'])
+            
+            if chart_path.exists():
+                # Add chart title
+                chart_title = f"{chart['chart_type'].title()}: {chart['metric_name']}"
+                story.append(Paragraph(chart_title, subheading_style))
+                story.append(Spacer(1, 0.1*inch))
+                
+                # Add image
+                try:
+                    img = Image(str(chart_path), width=6*inch, height=3*inch)
+                    story.append(img)
+                    story.append(Spacer(1, 0.3*inch))
+                except:
+                    story.append(Paragraph(f"<i>Chart could not be embedded: {chart_path.name}</i>", normal_style))
+                    story.append(Spacer(1, 0.1*inch))
+        
+        story.append(PageBreak())
+    
+    # ========================================================================
+    # VARIANCE DETAILS
+    # ========================================================================
+    
+    df_variance = data.get('variance')
+    
+    if df_variance is not None and len(df_variance) > 0:
+        story.append(Paragraph("Detailed Variance Analysis", heading_style))
+        story.append(Spacer(1, 0.2*inch))
+        
+        # Latest period analysis
+        latest_period = df_variance['current_period'].max()
+        latest_var = df_variance[df_variance['current_period'] == latest_period]
+        
+        # Group by metric
+        for metric in latest_var['metric_name'].unique()[:3]:  # Top 3 metrics
+            metric_data = latest_var[latest_var['metric_name'] == metric]
+            
+            story.append(Paragraph(f"{metric}", subheading_style))
+            
+            avg_change = metric_data['delta_percentage'].mean()
+            story.append(Paragraph(f"<b>Average Change:</b> {avg_change:.1f}%", normal_style))
+            story.append(Paragraph(f"<b>Entities:</b> {len(metric_data):,}", normal_style))
+            story.append(Spacer(1, 0.15*inch))
+    
+    # ========================================================================
+    # METHODOLOGY
+    # ========================================================================
+    
+    story.append(PageBreak())
+    story.append(Paragraph("Methodology & Data Sources", heading_style))
+    story.append(Spacer(1, 0.2*inch))
+    
+    schema = data.get('schema', {})
+    
+    story.append(Paragraph("<b>Auto-Detected Schema:</b>", subheading_style))
+    story.append(Paragraph(f"• Time Column: {schema.get('time_column', 'N/A')}", normal_style))
+    story.append(Paragraph(f"• Entity Columns: {len(schema.get('entity_columns', []))}", normal_style))
+    story.append(Paragraph(f"• Measure Columns: {len(schema.get('measure_columns', []))}", normal_style))
+    story.append(Spacer(1, 0.2*inch))
+    
+    story.append(Paragraph("<b>Analysis Method:</b>", subheading_style))
+    story.append(Paragraph("• Period-over-period variance calculation", normal_style))
+    story.append(Paragraph("• Automatic schema detection (zero configuration)", normal_style))
+    story.append(Paragraph("• Deterministic logic (100% auditable)", normal_style))
+    story.append(Paragraph("• Cost: $0.00 (no API calls)", normal_style))
+    story.append(Spacer(1, 0.3*inch))
+    
+    story.append(Paragraph("<i>This report was automatically generated with 100% deterministic logic. All numbers are auditable and traceable to source data.</i>", normal_style))
+    
+    # Build PDF
+    doc.build(story)
+    
+    print(f"\n💾 PDF saved: {output_file}")
+    
+    # Get file size
+    size_mb = output_file.stat().st_size / (1024 * 1024)
+    print(f"   Size: {size_mb:.2f} MB")
+    
+    print("\n" + "="*80)
+    print("✅ PDF REPORT COMPLETE")
+    print("="*80)
+    print(f"\n📄 View your PDF: {output_file}")
+    print(f"💰 Cost: $0.00 (no API calls)")
+    
+    return output_file
+
+
+if __name__ == "__main__":
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Generate PDF report from analysis results')
+    parser.add_argument('--analysis-dir', required=True, help='Directory containing analysis outputs')
+    parser.add_argument('--output', help='Output PDF file (default: <analysis-dir>/financial_report.pdf)')
+    
+    args = parser.parse_args()
+    
+    try:
+        build_pdf_report(args.analysis_dir, args.output)
+    except Exception as e:
+        print(f"\n❌ ERROR: {str(e)}")
+        import traceback
+        traceback.print_exc()

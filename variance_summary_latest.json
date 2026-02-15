@@ -1,0 +1,75 @@
+{
+  "current_month": "2024-06",
+  "prior_month": "2024-05",
+  "overall": {
+    "total_revenue_proxy": {
+      "label": "Revenue Proxy",
+      "current": 228808509.74886435,
+      "prior": 221343145.05215088,
+      "delta_abs": 7465364.696713477,
+      "delta_pct": 3.372756221998452,
+      "direction": "increase"
+    },
+    "avg_price": {
+      "label": "Average Price",
+      "current": 3310.867135188037,
+      "prior": 3312.088954430851,
+      "delta_abs": -1.2218192428140355,
+      "delta_pct": -0.03688968682980294,
+      "direction": "decrease"
+    },
+    "avg_discount_percentage": {
+      "label": "Average Discount %",
+      "current": 46.75446186886807,
+      "prior": 46.735539600954056,
+      "delta_abs": 0.018922267914014412,
+      "delta_pct": 0.04048796285563404,
+      "direction": "increase"
+    },
+    "avg_rating_weighted": {
+      "label": "Average Rating",
+      "current": NaN,
+      "prior": NaN,
+      "delta_abs": NaN,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    }
+  },
+  "top_categories": [
+    {
+      "category": "HomeTheater,TV&Video",
+      "revenue_current": 74403381.83643098,
+      "revenue_delta_pct": 5.532881194181154,
+      "price_effect": -684443.2201299228,
+      "volume_effect": 14467896.896962713
+    },
+    {
+      "category": "Kitchen&HomeAppliances",
+      "revenue_current": 55248045.05238622,
+      "revenue_delta_pct": 1.4630822141037663,
+      "price_effect": -430086.7057444052,
+      "volume_effect": 2225710.543074272
+    },
+    {
+      "category": "Heating,Cooling&AirQuality",
+      "revenue_current": 40862973.856349096,
+      "revenue_delta_pct": -0.02045891084441937,
+      "price_effect": 10957.998067813174,
+      "volume_effect": 922297.9833251277
+    },
+    {
+      "category": "Mobiles&Accessories",
+      "revenue_current": 14347649.012435766,
+      "revenue_delta_pct": 1.420462113032433,
+      "price_effect": 156091.75545027695,
+      "volume_effect": -193963.99175439338
+    },
+    {
+      "category": "Laptops",
+      "revenue_current": 14123434.042300915,
+      "revenue_delta_pct": 7.2336930524232566,
+      "price_effect": 189299.55056899926,
+      "volume_effect": 752611.7499760295
+    }
+  ]
+}

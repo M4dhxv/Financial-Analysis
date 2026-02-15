@@ -1,0 +1,60 @@
+MONTHLY TIME-SERIES DATA SUMMARY
+================================================================================
+
+Generated: 2026-02-15 22:53:40
+Source: product_performance_table.csv
+Output: product_performance_timeseries.csv
+
+Time Period:
+  Start: 2024-01
+  Months: 6
+  End: 2024-06
+
+Data Dimensions:
+  Total rows: 8,106
+  Unique products: 1,351
+  Categories: 29
+
+Monthly Metrics (Average):
+
+  2024-01:
+    Products: 1,351
+    Avg Price: ₹3316.70
+    Avg Discount: 46.7%
+    Avg Rating: 4.09★
+    Total Reviews: 105,264.0
+
+  2024-02:
+    Products: 1,351
+    Avg Price: ₹3286.43
+    Avg Discount: 46.8%
+    Avg Rating: 4.09★
+    Total Reviews: 108,210.0
+
+  2024-03:
+    Products: 1,351
+    Avg Price: ₹3297.70
+    Avg Discount: 46.8%
+    Avg Rating: 4.09★
+    Total Reviews: 111,753.0
+
+  2024-04:
+    Products: 1,351
+    Avg Price: ₹3301.76
+    Avg Discount: 46.7%
+    Avg Rating: 4.09★
+    Total Reviews: 114,696.0
+
+  2024-05:
+    Products: 1,351
+    Avg Price: ₹3312.09
+    Avg Discount: 46.7%
+    Avg Rating: 4.09★
+    Total Reviews: 118,248.0
+
+  2024-06:
+    Products: 1,351
+    Avg Price: ₹3310.87
+    Avg Discount: 46.8%
+    Avg Rating: 4.10★
+    Total Reviews: 121,886.0

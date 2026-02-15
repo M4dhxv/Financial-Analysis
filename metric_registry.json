@@ -1,0 +1,114 @@
+{
+  "actual_price_clean": {
+    "name": "actual_price_clean",
+    "type": "level",
+    "driver_category": "price",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "discounted_price_clean": {
+    "name": "discounted_price_clean",
+    "type": "level",
+    "driver_category": "price",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "discount_percentage_clean": {
+    "name": "discount_percentage_clean",
+    "type": "ratio",
+    "driver_category": "volume",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "absolute_discount": {
+    "name": "absolute_discount",
+    "type": "level",
+    "driver_category": "volume",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "avg_rating": {
+    "name": "avg_rating",
+    "type": "ratio",
+    "driver_category": "quality",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "rating_count_clean": {
+    "name": "rating_count_clean",
+    "type": "level",
+    "driver_category": "volume",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "rating_std": {
+    "name": "rating_std",
+    "type": "level",
+    "driver_category": "quality",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "review_count": {
+    "name": "review_count",
+    "type": "level",
+    "driver_category": "volume",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "avg_review_length": {
+    "name": "avg_review_length",
+    "type": "ratio",
+    "driver_category": "other",
+    "is_decomposable": false,
+    "analysis_priority": 3
+  },
+  "percent_reviews_mentioning_price": {
+    "name": "percent_reviews_mentioning_price",
+    "type": "ratio",
+    "driver_category": "price",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "percent_reviews_mentioning_quality": {
+    "name": "percent_reviews_mentioning_quality",
+    "type": "ratio",
+    "driver_category": "quality",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "percent_reviews_mentioning_durability": {
+    "name": "percent_reviews_mentioning_durability",
+    "type": "ratio",
+    "driver_category": "other",
+    "is_decomposable": false,
+    "analysis_priority": 3
+  },
+  "median_price": {
+    "name": "median_price",
+    "type": "ratio",
+    "driver_category": "price",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "median_discount_percentage": {
+    "name": "median_discount_percentage",
+    "type": "ratio",
+    "driver_category": "volume",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "median_rating": {
+    "name": "median_rating",
+    "type": "ratio",
+    "driver_category": "quality",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  },
+  "median_rating_count": {
+    "name": "median_rating_count",
+    "type": "ratio",
+    "driver_category": "volume",
+    "is_decomposable": false,
+    "analysis_priority": 2
+  }
+}

@@ -1,0 +1,729 @@
+[
+  {
+    "current_month": "2024-06",
+    "category": "Accessories",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": 0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": 0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Accessories&Peripherals",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 11389539.867638769,
+      "prior_value": 10994709.768485632,
+      "delta_abs": 394830.0991531368,
+      "delta_pct": 3.591091601934292,
+      "direction": "increase"
+    },
+    "decomposition": {
+      "price_effect": 47936.28400725995,
+      "volume_effect": 251019.4254198355,
+      "interaction_effect": 863.9457494019816
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Arts&Crafts",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": -0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": -0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Cameras&Photography",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": 0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": 0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "CarAccessories",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": 0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": 0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Components",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 78875.07778144984,
+      "prior_value": 83614.45357549518,
+      "delta_abs": -4739.375794045336,
+      "delta_pct": -5.6681298404541645,
+      "direction": "decrease"
+    },
+    "decomposition": {
+      "price_effect": -22827.935041791727,
+      "volume_effect": 7067.97986848742,
+      "interaction_effect": -224.35316994389905
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "CraftMaterials",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": 0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": 0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Electrical",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": 0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": 0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "ExternalDevices&DataStorage",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 40529.17235654618,
+      "prior_value": 45856.59578607448,
+      "delta_abs": -5327.423429528302,
+      "delta_pct": -11.617572866466702,
+      "direction": "decrease"
+    },
+    "decomposition": {
+      "price_effect": -7321.305954491287,
+      "volume_effect": -8760.871907914012,
+      "interaction_effect": 340.52585834843194
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "GeneralPurposeBatteries&BatteryChargers",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 400902.46464639006,
+      "prior_value": 371965.56967305846,
+      "delta_abs": 28936.894973331597,
+      "delta_pct": 7.779455232581302,
+      "direction": "increase"
+    },
+    "decomposition": {
+      "price_effect": 1170.6969638210858,
+      "volume_effect": 9240.6202452363,
+      "interaction_effect": 10.325882812093369
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Headphones,Earbuds&Accessories",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 1420708.476400965,
+      "prior_value": 1477857.00904176,
+      "delta_abs": -57148.53264079499,
+      "delta_pct": -3.866986609066462,
+      "direction": "decrease"
+    },
+    "decomposition": {
+      "price_effect": -9685.472642752258,
+      "volume_effect": -29559.553884275476,
+      "interaction_effect": 173.1543552049135
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Heating,Cooling&AirQuality",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 40862973.856349096,
+      "prior_value": 40871335.686478116,
+      "delta_abs": -8361.830129019916,
+      "delta_pct": -0.0204589108444193,
+      "direction": "decrease"
+    },
+    "decomposition": {
+      "price_effect": 10957.998067813174,
+      "volume_effect": 922297.9833251276,
+      "interaction_effect": 207.10992911674384
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "HomeAudio",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 2368579.8074233467,
+      "prior_value": 2292242.675704314,
+      "delta_abs": 76337.13171903277,
+      "delta_pct": 3.3302377853853296,
+      "direction": "increase"
+    },
+    "decomposition": {
+      "price_effect": 44275.803525375755,
+      "volume_effect": -12165.128347980008,
+      "interaction_effect": -342.22843304638263
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "HomeMedicalSupplies&Equipment",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": 0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": 0.0
+    },
+    "drivers": [
+      {
+        "driver": "discounting",
+        "impact_score": 25.004288596552044,
+        "contribution_pct": null,
+        "narrative": "Discounting decreased by 8.3pp",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "HomeStorage&Organization",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 473143.2249644121,
+      "prior_value": 378723.51796679816,
+      "delta_abs": 94419.70699761396,
+      "delta_pct": 24.931038744177357,
+      "direction": "increase"
+    },
+    "decomposition": {
+      "price_effect": 5810.572196792077,
+      "volume_effect": 78177.73898394596,
+      "interaction_effect": 1060.429425914554
+    },
+    "drivers": [
+      {
+        "driver": "volume",
+        "impact_score": 18.25,
+        "contribution_pct": 82.79811648422248,
+        "narrative": "Demand volume increased 18.2%, contributing 82.8% of revenue change",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "HomeTheater,TV&Video",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 74403381.83643098,
+      "prior_value": 70502559.00767866,
+      "delta_abs": 3900822.828752324,
+      "delta_pct": 5.532881194181154,
+      "direction": "increase"
+    },
+    "decomposition": {
+      "price_effect": -684443.2201299228,
+      "volume_effect": 14467896.896962712,
+      "interaction_effect": -41265.61764688877
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Kitchen&Dining",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": -0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": -0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Kitchen&HomeAppliances",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 55248045.05238622,
+      "prior_value": 54451376.6453534,
+      "delta_abs": 796668.4070328176,
+      "delta_pct": 1.4630822141037665,
+      "direction": "increase"
+    },
+    "decomposition": {
+      "price_effect": -430086.7057444052,
+      "volume_effect": 2225710.543074272,
+      "interaction_effect": -12394.80992729524
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Laptops",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 14123434.042300915,
+      "prior_value": 13170705.624580516,
+      "delta_abs": 952728.4177203998,
+      "delta_pct": 7.233693052423256,
+      "direction": "increase"
+    },
+    "decomposition": {
+      "price_effect": 189299.5505689993,
+      "volume_effect": 752611.7499760295,
+      "interaction_effect": 10817.117175371386
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Microphones",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": -0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": -0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Mobiles&Accessories",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 14347649.012435766,
+      "prior_value": 14146700.491706897,
+      "delta_abs": 200948.52072886936,
+      "delta_pct": 1.420462113032433,
+      "direction": "increase"
+    },
+    "decomposition": {
+      "price_effect": 156091.75545027695,
+      "volume_effect": -193963.99175439336,
+      "interaction_effect": -1057.973316399166
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Monitors",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": -0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": -0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "NetworkingDevices",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 177659.90446847695,
+      "prior_value": 170729.04467949306,
+      "delta_abs": 6930.859788983886,
+      "delta_pct": 4.059566901457851,
+      "direction": "increase"
+    },
+    "decomposition": {
+      "price_effect": -6675.067719433815,
+      "volume_effect": 67301.97542974677,
+      "interaction_effect": -458.1703286711968
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "OfficeElectronics",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": 0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": 0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "OfficePaperProducts",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 177391.08590152164,
+      "prior_value": 183996.99405939525,
+      "delta_abs": -6605.908157873608,
+      "delta_pct": -3.5902261293144737,
+      "direction": "decrease"
+    },
+    "decomposition": {
+      "price_effect": -6348.395836626879,
+      "volume_effect": -11032.60618353772,
+      "interaction_effect": 316.36524102791753
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "PowerAccessories",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": 0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": 0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Printers,Inks&Accessories",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": 0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": 0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "Tablets",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 0.0,
+      "prior_value": 0.0,
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "direction": "flat"
+    },
+    "decomposition": {
+      "price_effect": 0.0,
+      "volume_effect": 0.0,
+      "interaction_effect": 0.0
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  },
+  {
+    "current_month": "2024-06",
+    "category": "WearableTechnology",
+    "primary_metric": {
+      "kpi": "revenue_proxy",
+      "current_value": 13295696.867379509,
+      "prior_value": 12200771.967381258,
+      "delta_abs": 1094924.899998251,
+      "delta_pct": 8.974226408997161,
+      "direction": "increase"
+    },
+    "decomposition": {
+      "price_effect": 21919.837854141555,
+      "volume_effect": 654674.006853592,
+      "interaction_effect": 1151.6990762884195
+    },
+    "drivers": [
+      {
+        "rank": 1,
+        "driver": "no_significant_change",
+        "impact_score": 0,
+        "narrative": "No significant drivers identified"
+      }
+    ]
+  }
+]

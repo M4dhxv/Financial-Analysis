@@ -1,0 +1,38 @@
+{
+  "time_column": "snapshot_month",
+  "entity_columns": [
+    "product_id",
+    "product_name",
+    "category",
+    "category_lvl1",
+    "category_lvl2",
+    "category_lvl3",
+    "category_lvl4",
+    "price_vs_category_median",
+    "discount_vs_category_median",
+    "rating_vs_category_median",
+    "rating_count_vs_category_median",
+    "img_link",
+    "product_link"
+  ],
+  "measure_columns": [
+    "actual_price_clean",
+    "discounted_price_clean",
+    "discount_percentage_clean",
+    "absolute_discount",
+    "avg_rating",
+    "rating_count_clean",
+    "rating_std",
+    "review_count",
+    "avg_review_length",
+    "percent_reviews_mentioning_price",
+    "percent_reviews_mentioning_quality",
+    "percent_reviews_mentioning_durability",
+    "median_price",
+    "median_discount_percentage",
+    "median_rating",
+    "median_rating_count"
+  ],
+  "text_columns": [],
+  "excluded_columns": []
+}
